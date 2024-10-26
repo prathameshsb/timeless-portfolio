@@ -1,0 +1,17 @@
+.text-container {
+  width: 100vw;
+  height: 80pt;
+  filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 90pt;
+  text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
+}

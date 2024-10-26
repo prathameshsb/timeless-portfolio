@@ -1,0 +1,161 @@
+.controlcenter-container {
+  z-index: 200;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0px auto 0 auto;
+  position: absolute;
+}
+
+.controlcenter-btn > button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 70px;
+  right: 14.5%;
+}
+
+.cc-content-container {
+  width: 99.8vw;
+  height: 99.5vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(36, 36, 36, 0.8); /* Using RGBA for transparency */
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cc-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 70px auto 0 auto;
+  font-family: "Inconsolata";
+  color: white;
+}
+
+.cc-nav-close-section {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.cc-nav-close-icon {
+  margin-top: -8px;
+}
+
+.cc-footer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto 70px auto;
+  font-family: "Inconsolata";
+  color: white;
+}
+
+.cc-footer-heading {
+  font-family: "Reenie Beanie";
+  font-size: 30px;
+  color: #d9d9d9;
+  padding-bottom: 20px;
+}
+
+.cc-footer-social-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.cc-footer-social-icon > a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.cc-widgets {
+  gap: 20px;
+  width: 80%;
+  height: 100%;
+  font-family: "Inconsolata";
+  color: white;
+  align-self: flex-end;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 301;
+}
+
+.cc-widgets-content {
+  width: 380px;
+  height: 100%;
+  border: 2px solid pink;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cc-w-adjustment-container {
+  width: inherit;
+  height: 165px;
+}
+
+.cc-w-adjust-content {
+  width: inherit;
+  height: inherit;
+  border-radius: 15px;
+  background-color: #191919;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cc-dark-btn,
+.cc-cursor-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cc-w-spotify-content {
+  height: inherit;
+  background-color: #191919;
+  border-radius: 15px;
+  width: 195px;
+}
+
+.cc-w-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.cc-w-resume-content {
+  height: inherit;
+  background-color: #191919;
+  border-radius: 15px;
+  width: 195px;
+}
+
+.cc-w-livescore-container,
+.cc-w-lang-container,
+.cc-w-inspiration-container {
+  width: inherit;
+  height: 97px;
+  background-color: #082e59;
+  border-radius: 15px;
+}
+
+.cc-w-lang-container,
+.cc-w-inspiration-container {
+  background-color: #191919;
+}

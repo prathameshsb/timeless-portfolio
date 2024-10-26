@@ -1,0 +1,291 @@
+.ux-case-study-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Inconsolata";
+  font-size: 24px;
+}
+
+.ux-header-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ux-heading {
+  font-size: 96px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.ux-header-container > .hr {
+  width: 70%;
+  align-self: flex-start;
+  height: 1px;
+  background-color: white;
+  margin: 30px 0;
+}
+
+.ux-banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+}
+
+.ux-banner-image-holder {
+  width: 70%;
+  height: 820px;
+  background-color: #191919;
+  border-radius: 20px;
+  box-shadow: -10px -10px 20px rgba(41, 41, 41, 1),
+    10px 10px 20px rgba(16, 16, 16, 1),
+    inset -10px -10px 8px rgba(41, 41, 41, 0.25),
+    inset 8px 8px 8px rgba(16, 16, 16, 1);
+}
+
+.ux-banner-container > h1 {
+  font-size: 9vw;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  width: 30%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  transform: translate(-25%, 0%);
+}
+
+.ux-problem-statement {
+  width: 80%;
+  margin: 115px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ux-problem-statement > h1,
+.ux-problem-statement > p {
+  width: 50%;
+}
+
+.ux-problem-statement > h1 {
+  font-size: 64px;
+}
+
+.ux-role-team-timeline-tool {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 150px auto;
+}
+
+.ux-role-team-timeline-tool h2 {
+  font-size: 48px;
+}
+
+.ux-rttt h2 {
+  margin: 0;
+}
+
+.ux-rttt ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ux-rttt ul li {
+  margin: 10px;
+}
+
+.ux-image-filler {
+  width: 80%;
+  height: 80vh;
+  background-color: #191919;
+  border-radius: 20px;
+  box-shadow: -10px -10px 20px rgba(41, 41, 41, 1),
+    10px 10px 20px rgba(16, 16, 16, 1),
+    inset -10px -10px 8px rgba(41, 41, 41, 0.25),
+    inset 8px 8px 8px rgba(16, 16, 16, 1);
+  margin: 0 auto 150px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ux-image {
+  width: 98%;
+  height: 98%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.ux-deliverables,
+.ux-user-research {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto 150px auto;
+}
+
+.ux-deliverables > h1,
+.ux-user-research > h1 {
+  font-size: 96px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.slideline-text {
+  font-size: 20px;
+  font-family: "Reenie Beanie";
+  color: #a2a2a2;
+  position: absolute;
+  top: -10px;
+  width: 150px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.ux-deliverables-text,
+.ux-user-research-text {
+  text-align: center;
+  width: 80%;
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+.ux-user-research-text {
+  width: 75%;
+}
+
+.ux-user-research {
+  margin: 0 auto 100px auto !important;
+}
+
+.ux-deliverables-faded-text {
+  color: #a2a2a2;
+  font-size: 20px;
+  text-align: center;
+  width: 60%;
+  line-height: 1.5;
+}
+
+.ux-design-process {
+  margin: 0 auto 50px auto;
+  width: 100%;
+}
+
+.ux-design-process > h1 {
+  font-size: 96px;
+  text-align: center;
+}
+
+.ux-visual-style-guide {
+  width: 80%;
+  margin: 0 auto 150px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ux-visual-style-guide > h1 {
+  text-align: center;
+  font-size: 96px;
+}
+
+.ux-visual-style-content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.ux-font-styles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.primary-font-text,
+.secondary-font-text {
+  font-size: 20px;
+  color: #a2a2a2;
+}
+
+.ux-color-guide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.ux-color-guide-content {
+  margin-right: -50px;
+}
+
+.ux-color-palette {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.next-btn-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  width: 25%;
+}
+
+.next-btn {
+  display: flex;
+  text-decoration: none;
+}
+
+.project-tags {
+  background-color: #ffffff;
+  padding: 5px 30px;
+  color: #191919;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.ux-horizontal-scroll-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.animate-left-right {
+  display: inline-block;
+  animation: left-right 2s ease-in-out infinite alternate;
+}
+
+@keyframes left-right {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(
+      10px
+    ); /* Adjust the value for more or less movement */
+  }
+}

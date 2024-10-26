@@ -1,0 +1,42 @@
+/* Ensure .shapes and .content use position: absolute to be positioned within .topSection */
+.shapes,
+.content,
+.cursor {
+  width: 100%; /* May adjust depending on requirement */
+  height: 100%; /* May adjust depending on requirement */
+}
+
+/* No changes needed for .shapes and .shape, just ensuring they are scoped to .topSection */
+.shapes {
+  font-family: "Montserrat", sans-serif;
+  background: #191919;
+}
+
+.shape {
+  will-change: transform;
+  position: absolute;
+  border-radius: 50%;
+  filter: url(#noiseFilter); /* Apply the noise filter here */
+}
+
+/* Specific shapes */
+.shape.shape-1 {
+  background: #99c2ff;
+  width: 300px;
+  height: 300px;
+  margin: -150px 0 0 -150px;
+}
+
+.shape.shape-2 {
+  background: #ffecec;
+  width: 240px;
+  height: 240px;
+  margin: -120px 0 0 -120px;
+}
+
+.shape.shape-3 {
+  background: #ffcc57;
+  width: 170px;
+  height: 170px;
+  margin: -85px 0 0 -85px;
+}

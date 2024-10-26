@@ -1,0 +1,99 @@
+/* WorkExp.css */
+.WorkExp-container {
+  width: 100%;
+  display: flex;
+  margin-bottom: 200px;
+  justify-content: center;
+  overflow: hidden; /* Avoids overflow issues outside the container */
+}
+
+.content-holder {
+  display: flex;
+  gap: 10px;
+  width: 60%; /* Full width of the container */
+  justify-content: center;
+  overflow: hidden; /* Avoids overflow outside this holder */
+}
+
+.card {
+  height: 125px; /* Set a fixed height */
+  width: 100px; /* Initial width */
+  flex: 1; /* Starts with flex-grow of 1 */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  cursor: pointer;
+  transition: flex-grow 0.6s ease-out, background-color 0.3s ease; /* Smooth transition for flex-grow and background-color */
+  scroll-behavior: smooth;
+  border-radius: 5px;
+}
+
+.currrent-position {
+  font-size: 26px;
+  font-family: "Reenie Beanie", cursive;
+  transform: rotate(330deg);
+  color: #8a8a8a;
+  width: 100px;
+  margin-left: 30px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.card-content {
+  display: none;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card:hover {
+  flex-grow: 3; /* Grows the card on hover */
+}
+
+.card-content-title,
+.card-content-role,
+.card-content-period {
+  padding: 5px 0px;
+  margin: 0;
+  font-family: "Inconsolata";
+  text-overflow: ellipsis;
+  overflow: hidden; /* Ensures content that overflows will be hidden */
+  white-space: nowrap; /* Prevents text from wrapping */
+  max-width: 460px;
+}
+
+.card-content-title {
+  font-size: 33px;
+}
+
+.adobe {
+  background-color: #fe0000;
+}
+.findem {
+  background-color: #A45CFE;
+}
+.gryphon {
+  background-color: #004c6d;
+}
+.neu {
+  background-image: linear-gradient(to right, #cc0000, #000);
+}
+.incluvie {
+  background-image: linear-gradient(to right, #fff, #000);
+}
+.collegepond {
+  background-color: #53dffe;
+}

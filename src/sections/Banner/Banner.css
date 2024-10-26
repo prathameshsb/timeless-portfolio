@@ -1,0 +1,102 @@
+.banner-section {
+  height: 100vh;
+  display: flex; /* Updated to use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.content {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  mix-blend-mode: difference;
+  color: #fff;
+}
+
+#filters {
+  display: none;
+}
+
+.name-tag h3 {
+  font-size: 96px;
+  font-family: "Inconsolata";
+  font-weight: black;
+  margin-left: -50px;
+}
+
+.highlighter-name {
+  background-color: #096ae0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.iam-font {
+  font-size: 52px;
+  font-family: "Reenie Beanie", cursive;
+  margin-right: -10px;
+}
+
+.tagline-container,
+.workex-container {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.tagline,
+.tagline-dot {
+  /*   border: 2px solid white; */
+  padding: 20px;
+  /*   border-radius: 20px; */
+  font-family: "Inconsolata";
+  font-size: 24px;
+}
+
+.workex-container > p {
+  font-size: 20px;
+  color: #8a8a8a;
+  font-family: "Inconsolata", cursive;
+}
+
+.tooltip-content {
+  visibility: hidden;
+  background-color: white; /* Tooltip background */
+  color: white; /* Text color */
+  text-align: center;
+  border-radius: 4px;
+  padding: 4px;
+
+  /* Positioning */
+  position: absolute;
+  z-index: 100;
+}
+.frontEng {
+  transform: translateX(-190%);
+}
+.prodDes {
+  transform: translateX(190%);
+}
+
+.tooltip:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+  z-index: 100;
+}
+
+.tooltip .tooltip-content img {
+  height: 150px;
+  width: 150px;
+  z-index: 100;
+  object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
+}
+
+.hoverme {
+  font-size: 26px;
+  font-family: "Reenie Beanie", cursive;
+  transform: rotate(330deg);
+  color: #8a8a8a;
+  width: 50px;
+}

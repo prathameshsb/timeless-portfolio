@@ -1,0 +1,29 @@
+.hs-container {
+  width: 600vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hs-panel {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #191919;
+  border: none;
+}
+.hs-content-container {
+  width: 80%;
+  height: 80%;
+  background-color: #191919;
+  border-radius: 20px;
+  box-shadow: -10px -10px 20px rgba(41, 41, 41, 1),
+    10px 10px 20px rgba(16, 16, 16, 1),
+    inset -10px -10px 8px rgba(41, 41, 41, 0.25),
+    inset 8px 8px 8px rgba(16, 16, 16, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

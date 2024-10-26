@@ -1,0 +1,76 @@
+.carousel-container {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  overflow: hidden; /* Hide any overflow */
+}
+
+.carousel-image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  position: relative;
+  align-items: center;
+}
+
+.carousel-image-wrapper img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover; /* Cover the area without losing aspect ratio */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for fading */
+  opacity: 0; /* Hide image initially */
+}
+
+.carousel-image-wrapper img.active {
+  opacity: 1; /* Show active image */
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  border: none;
+  font-size: 16px;
+  color: #2c2c2c;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.carousel-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.pagination-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 4px;
+  margin: 0 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  border: none;
+}
+
+.pagination-dot.active {
+  background-color: #000;
+}

@@ -1,0 +1,30 @@
+.nav {
+  margin: 75px 0 35px 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  font-family: "Inconsolata";
+}
+.about-nav {
+  font-family: "Inconsolata", monospace;
+}
+
+.logo-name {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+}
+
+.logo-name-btn {
+  font-size: 33px;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-home-btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}

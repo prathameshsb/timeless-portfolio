@@ -1,0 +1,43 @@
+.footer {
+  height: 60% !important;
+  font-family: "Inconsolata";
+  display: flex;
+  justify-content: center;
+}
+
+.footer-extra-connect-text-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-text {
+  color: #b5b5b5;
+  margin: 35px auto;
+  margin-top: 100px;
+  font-family: "Reenie Beanie";
+  font-size: 28px;
+}
+
+.footer-connect-cta {
+  width: 20%;
+  align-self: center;
+}
+
+.sendoff-line {
+  margin: 50px auto 0 auto;
+}
+
+.sendoff-line h3 {
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 100px;
+  color: #b5b5b5;
+}
+
+.sendoff-line span {
+  color: #b5b5b5;
+  font-size: 15px;
+  margin-bottom: 0px;
+}

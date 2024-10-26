@@ -10,8 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@motionone/utils": "^10.17.0",
+    "framer-motion": "^11.1.7",
+    "gasp": "^0.0.2",
+    "gsap": "^3.12.5",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-grid-layout": "^1.4.4",
+    "react-router-dom": "^6.23.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
