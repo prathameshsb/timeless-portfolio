@@ -9,14 +9,12 @@ import AllProjects from "./sections/ProjectPage/AllProjects";
 function App() {
   return (
     <Router>
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<Homepage />} exact />
-          <Route path="/about" element={<About />} />
-          <Route path="/project/:projectName" element={<ProjectPage />} />
-          <Route path="/allprojects" element={<AllProjects />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Homepage />} exact />
+        <Route path="/about" element={<About />} />
+        <Route path="/project/:projectName" element={<ProjectPage />} />
+        <Route path="/allprojects" element={<AllProjects />} />
+      </Routes>
     </Router>
   );
 }

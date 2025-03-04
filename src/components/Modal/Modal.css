@@ -1,0 +1,57 @@
+.modal-overlay {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  font-family: "Inconsolata", monospace;
+  width: 100vw;
+  max-width: 65%;
+  height: 60vh;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column; /* Allows modal-content to fill available space */
+}
+
+.modal-content {
+  flex-grow: 1; /* Ensures content takes up all available height */
+  background: #2c2c2c;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 15px;
+  max-height: 100%; /* Ensures it does not overflow the modal-overlay */
+  overflow-y: auto; /* Enables scrolling inside modal */
+}
+
+
+.modal-close-btn {
+  position: absolute;
+  top: -50px; /* Adjust positioning above modal */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: none;
+  font-size: 18px;
+  color: #2c2c2c;
+  cursor: pointer;
+  font-family: "Raleway";
+  padding: 10px;
+  border-radius: 25px; /* Ensures circular shape */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+
+.modal-close-btn:hover {
+  transform: translateX(-50%) scale(1.1);
+}

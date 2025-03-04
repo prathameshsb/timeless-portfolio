@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
@@ -6,6 +6,9 @@ import "./About.css";
 import Carousel from "../../components/Carousel/Carousel";
 import Nav from "../Nav/Nav";
 import ControlCenter from "../../components/ControlCenter/ControlCenter";
+import Footer from "../Footer/Footer";
+import StickyNav from "../StickyNav/StickyNav";
+import Modal from "../../components/Modal/Modal";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -21,12 +24,6 @@ const timelineEntries = [
     role: "Software Development Engineer",
     period: "March 2021 - June 2023",
     type: "work",
-  },
-  {
-    company: "Northeastern University",
-    role: "Masters in Digital Media, Interactive Design",
-    period: "Sept 2018 - Dec 2020",
-    type: "edu",
   },
   {
     company: "Gryphon Networks",
@@ -45,6 +42,12 @@ const timelineEntries = [
     role: "UI/UX, Product Designer",
     period: "March 2021 - June 2023",
     type: "work",
+  },
+  {
+    company: "Northeastern University",
+    role: "Masters in Digital Media, Interactive Design",
+    period: "Sept 2018 - Dec 2020",
+    type: "edu",
   },
   {
     company: "Converge by Collegepond",
@@ -100,6 +103,7 @@ function About() {
       { i: "h", x: 0, y: 10, w: 2, h: 1 },
     ],
   };
+  const [isModalOpen, setModalOpen] = useState(false);
 
   // Define the number of columns for each breakpoint
   const cols = { lg: 4, md: 4, sm: 4, xs: 4, xxs: 2 };
@@ -109,8 +113,9 @@ function About() {
 
   return (
     <>
-      {/* <ControlCenter /> */}
+      <ControlCenter />
       <Nav />
+      <StickyNav />
       <div className="layout">
         <ResponsiveGridLayout
           layouts={layouts}
@@ -145,13 +150,19 @@ function About() {
                 </div>
                 <div className="resume-downloader">
                   <button className="resume-btn" data-cursor="block">
-                    <b>download resume</b>
+                    <a
+                      href="https://drive.google.com/drive/folders/1EeRgNV1jI4XVsRL40VlX0K-dH2aQ-ed0?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <b>download resume</b>
+                    </a>
                   </button>
                 </div>
               </div>
               <div className="description-holder">
                 <p>
-                  I’m an experienced Product Designer & Frontend Engineer from
+                  I’m an experienced Frontend Engineer & a noive Product Designer from
                   California and I'm on an unwavering path to become a VP of
                   Design, Cheif Design Officer, or a Lead — ambition knows no
                   bounds...{" "}
@@ -175,7 +186,7 @@ function About() {
                   />
                 </div>
                 <p className="location-text">
-                  <b>SAN FRANCISCO, CA</b>
+                <b>SAN FRANCISCO, CA</b>
                 </p>
               </div>
             </div>
@@ -327,19 +338,57 @@ function About() {
             <div className="extra-description">
               <div className="extra-description-holder">
                 <p data-cursor="text">
-                  Outside of work, I channel my inner masterchef, practically
-                  live at the gym, worsen my dancing skills, & revel in the
+                  Outside of work, I channel my inner masterchef{" "}
+                  <img
+                    className="description-gif masterchef"
+                    src="https://media.tenor.com/QWG9Js3aE4YAAAAM/crying-kid.gif"
+                    alt="masterchef"
+                    width='30px'
+                    height='30px'
+                  />, practically
+                  live at the gym{" "}
+                  <img
+                    className="description-gif"
+                    src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbG5oNnhjd2w1Ynk2YnpvdTU0czRlMXFxcWwzZHBod2FidDV0eHFmMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/x1LaMN3xIN7Y4/giphy.gif"
+                    alt="live at the gym"
+                    width='30px'
+                    height='30px'
+                  />{" "}
+                  , worsen my dancing skills{" "}
+                  <img
+                    className="description-gif"
+                    src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWs2NmF4azhmOGxxMHZnaGp1a3F1dDdrM2p1anlhd3A4bGJyNmg4aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RLcQGYmQU36d3FceiP/giphy.gif"
+                    alt="bean dancing"
+                    width='30px'
+                    height='30px'
+                  />{" "}
+                  , & revel in the
                   drama of <span className="cancel-text">soccer</span>{" "}
-                  football. And yes, I'm fiercely proud,{" "}
+                  football{" "}
+                  <img
+                    className="description-gif"
+                    src="https://i.makeagif.com/media/12-21-2022/lQiZbP.gif"
+                    alt="world cup"
+                    width='30px'
+                    height='30px'
+                  />{" "}
+                  . And yes, I'm fiercely proud,{" "}
                   <span className="cancel-text">somewhat delusional</span>{" "}
                   <span className="chelsea" data-cursor="block">
                     Chelsea FC
                   </span>{" "}
+                  <img
+                    className="description-gif chelsea-gif"
+                    src="https://media.tenor.com/x80svCL2zVIAAAAM/chelsea-champions-league.gif"
+                    alt="chelsea champions league winning celebration"
+                    width='30px'
+                    height='30px'
+                  />{" "}
                   supporter — we definitely exist!! It's true, sarcasm 💙
                   me...
                 </p>
               </div>
-              <div className="description-gif-holder">
+              {/* <div className="description-gif-holder">
                 <img
                   className="description-gif masterchef"
                   src="https://media.tenor.com/QWG9Js3aE4YAAAAM/crying-kid.gif"
@@ -352,7 +401,7 @@ function About() {
                 />
                 <img
                   className="description-gif"
-                  src="https://i.pinimg.com/originals/02/98/4d/02984d6d0bd86915e03d093ec9b550bf.gif"
+                  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbG5oNnhjd2w1Ynk2YnpvdTU0czRlMXFxcWwzZHBod2FidDV0eHFmMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/x1LaMN3xIN7Y4/giphy.gif"
                   alt="live at the gym"
                 />
                 <img
@@ -362,10 +411,10 @@ function About() {
                 />
                 <img
                   className="description-gif"
-                  src="https://media.tenor.com/TFqgAJA6cMsAAAAM/carlo-ancelotti.gif"
-                  alt="carlo dancing"
+                  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWs2NmF4azhmOGxxMHZnaGp1a3F1dDdrM2p1anlhd3A4bGJyNmg4aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RLcQGYmQU36d3FceiP/giphy.gif"
+                  alt="bean dancing"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
           <div key="g" className="tile">
@@ -435,11 +484,20 @@ function About() {
           </div>
           <div key="h" className="tile">
             <div className="life-hightlight-carousel">
-              <Carousel images={images} autoScroll={true} loading={true} />
+              {/* <Carousel images={images} autoScroll={true} loading={true} /> */}
+              <div onClick={() => setModalOpen(true)}>button</div>
             </div>
           </div>
         </ResponsiveGridLayout>
       </div>
+      <Footer displayExtraConnect={false} />
+
+      {isModalOpen &&
+        <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
+          <h2>Modal Title</h2>
+          <p>This is a modal content.</p>
+        </Modal>
+      }
     </>
   );
 }

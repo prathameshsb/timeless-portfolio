@@ -16,13 +16,13 @@
 .project-header-name {
   font-size: 96px;
   font-family: "Raleway";
-  margin: 0;
-  margin-left: -30px;
   flex-wrap: nowrap;
   white-space: nowrap;
   overflow: hidden;
   color: #c2c2c2a0;
-  margin-bottom: 50px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 .main-container {
@@ -35,7 +35,7 @@
   border-radius: 10px;
   overflow-y: auto;
   scroll-behavior: smooth;
-  padding: 85px 50px;
+  /* padding: 85px 50px; */
 }
 
 .project-title {

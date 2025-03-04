@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ControlCenter.css";
 import { Link } from "react-router-dom";
 
@@ -7,20 +7,30 @@ function ControlCenter() {
 
   const toggleControlCenter = () => {
     setControlCenter(!controlCenter);
-    console.log("Toggling control center");
+    if (!controlCenter) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
   };
+
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
 
   const config = {
     blockPadding: 5,
   };
   return (
       <div className="controlcenter-container">
-        {controlCenter === true ? (
+        {controlCenter ? (
           <div className="cc-content-container">
             <div className="cc-nav">
               <div className="logo-name-btn">PRATHAMESH S B.</div>
               <div className="cc-nav-close-section logo-name-btn">
-                <div
+                {/* <div
                   className="cc-nav-close-icon"
                   data-cursor="block"
                   onClick={toggleControlCenter}
@@ -37,11 +47,11 @@ function ControlCenter() {
                       fill="white"
                     />
                   </svg>
-                </div>
-                <div data-cursor="block">
-                  <Link className="logo-name-btn" to="/">
-                    ABOUT
-                  </Link>
+                </div> */}
+                <div data-cursor="block" onClick={toggleControlCenter}>
+                  <div className="logo-name-btn">
+                    CLOSE
+                  </div>
                 </div>
               </div>
             </div>

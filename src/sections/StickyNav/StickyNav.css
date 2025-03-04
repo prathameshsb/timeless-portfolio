@@ -36,6 +36,11 @@
   font-weight: 900;
   text-decoration: none;
   color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.stickyNav-link-text:hover {
+  transform: scale(1.2)
 }
 
 .resume {

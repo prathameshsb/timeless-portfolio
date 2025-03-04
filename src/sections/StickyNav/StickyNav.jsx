@@ -24,9 +24,15 @@ function StickyNav() {
         >
           all projects
         </Link>
-        <Link data-cursor="block" className="stickyNav-link-text resume" to="/">
+        <a
+          data-cursor="block"
+          className="stickyNav-link-text resume"
+          href="https://drive.google.com/drive/folders/1EeRgNV1jI4XVsRL40VlX0K-dH2aQ-ed0?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           resume
-        </Link>
+        </a>
       </div>
     // </IPadCursorProvider>
   );

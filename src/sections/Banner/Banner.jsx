@@ -8,7 +8,7 @@ const Banner = () => {
 
   return (
     <div className="banner-container">
-      <CursorTracker containerRef={bannerRef} />
+      {/* <CursorTracker containerRef={bannerRef} /> */}
       <section ref={bannerRef} className="banner-section">
         <div className="content">
           <TextMorph />
@@ -43,7 +43,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="workex-container">
-            <p>4+ years of work experience</p>
+            <p>5+ years of work experience</p>
           </div>
         </div>
       </section>

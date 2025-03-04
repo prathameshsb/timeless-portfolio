@@ -4,7 +4,7 @@ const cardsData = [
   {
     id: "findem",
     title: "Findem.ai",
-    role: "Software Engineer, Frontend",
+    role: "Software Engineer and UI/UX Designer",
     period: "May 2024 - Present",
     image: "../../public/assests/logos/findem-logo.jpeg",
   },
@@ -18,28 +18,28 @@ const cardsData = [
   {
     id: "gryphon",
     title: "Gryphon",
-    role: "Frontend Developer",
+    role: "UI/UX Engineer and Designer",
     period: "July 2020 - February 2021",
     image: "../../public/assests/logos/gryphon-logo.png",
   },
   {
     id: "neu",
     title: "Northeastern Uni.",
-    role: "Frontend Developer",
+    role: "Graduate Teaching Assistant",
     period: "July 2020 - February 2021",
     image: "../../public/assests/logos/Northeastern_Huskies_logo.svg.png",
   },
   {
     id: "incluvie",
     title: "Incluvie",
-    role: "Frontend Developer",
+    role: "Product Designer",
     period: "July 2020 - February 2021",
     image: "../../public/assests/logos/incluvie-logo.png",
   },
   {
     id: "collegepond",
     title: "Collegepond",
-    role: "Frontend Developer",
+    role: "Product Designer",
     period: "July 2020 - February 2021",
     image: "../../public/assests/logos/collegepond-logo.jpeg",
   },
@@ -47,6 +47,9 @@ const cardsData = [
 function WorkExp() {
   return (
     <>
+      <h1 className="project-header-name">
+        WORK EXPERIENCE
+      </h1>
       <div className="WorkExp-container">
         <div className="content-holder">
           <span className="currrent-position">
@@ -72,7 +75,7 @@ function WorkExp() {
             >
               <img src={card.image} alt={card.title} />
               <div className="card-content">
-                <h2 className="card-content-title">{card.title}</h2>
+                <h3 className="card-content-title">{card.title}</h3>
                 <p className="card-content-role">{card.role}</p>
                 <p className="card-content-period">{card.period}</p>
               </div>

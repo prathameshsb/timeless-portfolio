@@ -1,8 +1,8 @@
 .footer {
-  height: 60% !important;
   font-family: "Inconsolata";
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .footer-extra-connect-text-holder {
@@ -10,12 +10,12 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 25px;
 }
 
 .footer-text {
   color: #b5b5b5;
   margin: 35px auto;
-  margin-top: 100px;
   font-family: "Reenie Beanie";
   font-size: 28px;
 }
@@ -26,13 +26,21 @@
 }
 
 .sendoff-line {
-  margin: 50px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.addMargin {
+  margin-top: 50px;
 }
 
 .sendoff-line h3 {
   font-size: 16px;
   font-weight: 100;
-  margin-bottom: 100px;
+  text-align: center;
   color: #b5b5b5;
 }
 

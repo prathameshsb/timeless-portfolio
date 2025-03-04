@@ -12,7 +12,7 @@ import "./Homepage.css";
 function Homepage() {
   return (
     <>
-      {/* <ControlCenter /> */}
+      <ControlCenter />
       <StickyNav />
       <Banner />
       <Projects />

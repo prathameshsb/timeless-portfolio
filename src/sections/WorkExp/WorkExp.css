@@ -13,6 +13,7 @@
   width: 60%; /* Full width of the container */
   justify-content: center;
   overflow: hidden; /* Avoids overflow outside this holder */
+  margin-left: -150px;
 }
 
 .card {
@@ -50,7 +51,6 @@
   justify-content: flex-start;
   flex-direction: column;
   box-sizing: border-box;
-  text-align: center;
   transition: opacity 0.3s ease;
 }
 
@@ -70,13 +70,14 @@
   margin: 0;
   font-family: "Inconsolata";
   text-overflow: ellipsis;
-  overflow: hidden; /* Ensures content that overflows will be hidden */
-  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden;
   max-width: 460px;
+  font-size: 15px;
 }
 
 .card-content-title {
-  font-size: 33px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .adobe {

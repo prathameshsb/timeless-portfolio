@@ -11,13 +11,13 @@
   background-color: transparent;
   border: none;
   position: absolute;
-  top: 70px;
-  right: 14.5%;
+  top: 80px;
+  right: 11.5%;
 }
 
 .cc-content-container {
   width: 99.8vw;
-  height: 99.5vh;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -44,6 +44,7 @@
   display: flex;
   flex-direction: row;
   gap: 50px;
+  padding: 10px;
 }
 
 .cc-nav-close-icon {
@@ -97,7 +98,6 @@
 .cc-widgets-content {
   width: 380px;
   height: 100%;
-  border: 2px solid pink;
   display: flex;
   flex-direction: column;
   gap: 10px;
