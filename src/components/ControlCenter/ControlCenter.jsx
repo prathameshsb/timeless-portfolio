@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./ControlCenter.css";
 import { Link } from "react-router-dom";
+import ChelseasLiveScore from "./ChelseasLiveScore/ChelseasLiveScore";
 
 function ControlCenter() {
   const [controlCenter, setControlCenter] = useState(false);
@@ -111,7 +112,9 @@ function ControlCenter() {
                   <div className="cc-w-spotify-content"></div>
                   <div className="cc-w-resume-content"></div>
                 </div>
-                <div className="cc-w-livescore-container"></div>
+                <div className="cc-w-livescore-container">
+                  <ChelseasLiveScore />
+                </div>
                 <div className="cc-w-lang-container"></div>
                 <div className="cc-w-inspiration-container"></div>
               </div>

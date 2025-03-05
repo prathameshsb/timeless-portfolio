@@ -1,0 +1,62 @@
+.chelsea-live-score {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+  background-color: #082e59;
+  border-radius: 15px;
+  color: white;
+  font-family: "Inconsolata", monospace;
+  overflow: hidden;
+}
+
+.team-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.team-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.league-logo {
+  width: 40px;
+  height: 40px;
+  filter: invert(1) brightness(100%);
+}
+
+.team-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.match-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upcoming {
+  font-size: 14px;
+  color: #fefefe;
+}
+
+.competition {
+  font-size: 12px;
+  color: #dddddd;
+}
+
+.error {
+  color: rgb(234, 43, 43);
+  font-size: 14px;
+}
