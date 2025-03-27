@@ -16,6 +16,7 @@ function Homepage() {
       <StickyNav />
       <Banner />
       <Projects />
+      {/* <ParallaxGallery /> */}
       <WorkExp />
       <Next />
       <Footer />

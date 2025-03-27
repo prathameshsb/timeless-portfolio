@@ -35,11 +35,11 @@ export default function Projects({ header = true }) {
 
   return (
     <>
-      {header && (
+      {/* {header && (
         <h1 className="project-header-name">
           PROJECTS
         </h1>
-      )}
+      )} */}
       <div className="project-holder">
         <div ref={containerRef} className="main-container">
           <Card cardData={cardData} cardRefs={cardRefs} />

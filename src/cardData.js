@@ -110,6 +110,7 @@ export const cardData = [
     id: 3,
     tag: "Web Dev",
     name: "Blog Platform",
+    imgUrl: "/assests/projects/shopping-cart/shopping-cart-2.png",
     summary:
       "A modern blogging platform with a rich text editor and SEO features.",
     timeline: "3 months",
@@ -123,6 +124,7 @@ export const cardData = [
     id: 4,
     tag: "UX Case Study",
     name: "HealthTrack",
+    imgUrl: "/assests/projects/shopping-cart/shopping-cart-2.png",
     summary:
       "HealthTrack is an app aimed at improving patient experience at hospitals.",
     problemStatement:
@@ -215,6 +217,7 @@ export const cardData = [
     id: 5,
     tag: "Web Dev",
     name: "Task Tracker",
+    imgUrl: "/assests/projects/shopping-cart/shopping-cart-2.png",
     summary: "A task management tool with collaboration features for teams.",
     timeline: "2 months",
     techStack: ["Angular", "Spring Boot", "MySQL"],
@@ -227,6 +230,7 @@ export const cardData = [
     id: 6,
     tag: "Web Dev",
     name: "CodeSnippets",
+    imgUrl: "/assests/projects/shopping-cart/shopping-cart-2.png",
     summary:
       "An online repository for developers to store and share code snippets.",
     timeline: "3 months",
@@ -241,6 +245,7 @@ export const cardData = [
     id: 7,
     tag: "UX Case Study",
     name: "Food Delivery App Redesign",
+    imgUrl: "/assests/projects/shopping-cart/shopping-cart-2.png",
     summary:
       "A UX case study on improving the user experience of a popular food delivery app.",
     problemStatement:
@@ -329,6 +334,7 @@ export const cardData = [
     id: 8,
     tag: "UX Case Study",
     name: "GreenThumbs",
+    imgUrl: "/assests/projects/shopping-cart/shopping-cart-2.png",
     summary:
       "UX redesign of GreenThumbs, an app that helps urban gardeners cultivate their spaces.",
     problemStatement:

@@ -9,13 +9,13 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: #191919; /* Sets the background color */
-  color: #fff; /* Optional: Sets text color for better contrast */
+  background-color: #090909;
+  color: #fff;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
-/* Ensures that all containing elements can expand to full available height */
 #root,
 .container {
   height: 100%;

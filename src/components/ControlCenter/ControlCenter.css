@@ -13,6 +13,19 @@
   position: absolute;
   top: 80px;
   right: 11.5%;
+  cursor: pointer;
+}
+
+circle {
+  transition: transform 0.4s ease-in-out;
+}
+
+.controlcenter-btn > button:hover .circle-top {
+  transform: translateX(15px);
+}
+
+.controlcenter-btn > button:hover .circle-bottom {
+  transform: translateX(-15px);
 }
 
 .cc-content-container {

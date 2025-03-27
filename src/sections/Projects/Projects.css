@@ -1,11 +1,8 @@
-/* Base styles (applied to the widest breakpoint needed, then override as needed) */
-
 .project-holder {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0;
 }
 
 .project-card,
@@ -35,7 +32,6 @@
   border-radius: 10px;
   overflow-y: auto;
   scroll-behavior: smooth;
-  /* padding: 85px 50px; */
 }
 
 .project-title {
@@ -69,7 +65,7 @@
   margin: 20px;
   background: inherit;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,16 +74,13 @@
 .project-card {
   width: 1000px;
   height: 96%;
-  border-radius: 15px;
-  background-color: #1c1c1c;
+  border-radius: 10px;
+  background-color: #181818;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease-out;
-  box-shadow: -10px -10px 20px rgba(41, 41, 41, 1),
-    10px 10px 20px rgba(16, 16, 16, 1),
-    inset -10px -10px 8px rgba(41, 41, 41, 0.25),
-    inset 8px 8px 8px rgba(16, 16, 16, 1);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0), -3px -3px 2px rgb(40, 40, 40);
 }
 
 /* Media Queries */

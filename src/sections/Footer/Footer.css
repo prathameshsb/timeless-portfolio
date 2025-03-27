@@ -1,12 +1,14 @@
 .footer {
   font-family: "Inconsolata";
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 110px;
 }
 
 .footer-extra-connect-text-holder {
-  width: 100%;
+  width: fit-content;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -21,7 +23,7 @@
 }
 
 .footer-connect-cta {
-  width: 20%;
+  width: 100%;
   align-self: center;
 }
 
@@ -30,7 +32,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 100px;
 }
 
 .addMargin {

@@ -339,51 +339,97 @@ function About() {
               <div className="extra-description-holder">
                 <p data-cursor="text">
                   Outside of work, I channel my inner masterchef{" "}
-                  <img
-                    className="description-gif masterchef"
-                    src="https://media.tenor.com/QWG9Js3aE4YAAAAM/crying-kid.gif"
-                    alt="masterchef"
-                    width='30px'
-                    height='30px'
-                  />, practically
+                  <span className="tooltip-about" data-cursor="text">
+                    <img
+                      className="description-gif masterchef"
+                      src="https://media.tenor.com/QWG9Js3aE4YAAAAM/crying-kid.gif"
+                      alt="masterchef"
+                      width='30px'
+                      height='30px'
+                    />
+                    <span className="tooltip-about-content">
+                      <img
+                        className="description-gif masterchef"
+                        src="https://media.tenor.com/QWG9Js3aE4YAAAAM/crying-kid.gif"
+                        alt="masterchef"
+                      />
+                    </span>
+                  </span>
+                  , practically
                   live at the gym{" "}
-                  <img
-                    className="description-gif"
-                    src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbG5oNnhjd2w1Ynk2YnpvdTU0czRlMXFxcWwzZHBod2FidDV0eHFmMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/x1LaMN3xIN7Y4/giphy.gif"
-                    alt="live at the gym"
-                    width='30px'
-                    height='30px'
-                  />{" "}
+                  <span className="tooltip-about" data-cursor="text">
+                    <img
+                      className="description-gif"
+                      src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbG5oNnhjd2w1Ynk2YnpvdTU0czRlMXFxcWwzZHBod2FidDV0eHFmMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/x1LaMN3xIN7Y4/giphy.gif"
+                      alt="live at the gym"
+                      width='30px'
+                      height='30px'
+                    />
+                    <span className="tooltip-about-content">
+                      <img
+                        className="description-gif"
+                        src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbG5oNnhjd2w1Ynk2YnpvdTU0czRlMXFxcWwzZHBod2FidDV0eHFmMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/x1LaMN3xIN7Y4/giphy.gif"
+                        alt="live at the gym"
+                      />
+                    </span>
+                  </span>{" "}
                   , worsen my dancing skills{" "}
-                  <img
-                    className="description-gif"
-                    src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWs2NmF4azhmOGxxMHZnaGp1a3F1dDdrM2p1anlhd3A4bGJyNmg4aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RLcQGYmQU36d3FceiP/giphy.gif"
-                    alt="bean dancing"
-                    width='30px'
-                    height='30px'
-                  />{" "}
+                  <span className="tooltip-about" data-cursor="text">
+                    <img
+                      className="description-gif"
+                      src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWs2NmF4azhmOGxxMHZnaGp1a3F1dDdrM2p1anlhd3A4bGJyNmg4aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RLcQGYmQU36d3FceiP/giphy.gif"
+                      alt="bean dancing"
+                      width='30px'
+                      height='30px'
+                    />
+                    <span className="tooltip-about-content">
+                      <img
+                        className="description-gif"
+                        src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWs2NmF4azhmOGxxMHZnaGp1a3F1dDdrM2p1anlhd3A4bGJyNmg4aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RLcQGYmQU36d3FceiP/giphy.gif"
+                        alt="bean dancing"
+                      />
+                    </span>
+                  </span>{" "}
                   , & revel in the
                   drama of <span className="cancel-text">soccer</span>{" "}
                   football{" "}
-                  <img
-                    className="description-gif"
-                    src="https://i.makeagif.com/media/12-21-2022/lQiZbP.gif"
-                    alt="world cup"
-                    width='30px'
-                    height='30px'
-                  />{" "}
+                  <span className="tooltip-about" data-cursor="text">
+                    <img
+                      className="description-gif"
+                      src="https://i.makeagif.com/media/12-21-2022/lQiZbP.gif"
+                      alt="world cup"
+                      width='30px'
+                      height='30px'
+                    />
+                    <span className="tooltip-about-content">
+                      <img
+                        className="description-gif"
+                        src="https://i.makeagif.com/media/12-21-2022/lQiZbP.gif"
+                        alt="world cup"
+                      />
+                    </span>
+                  </span>{" "}
                   . And yes, I'm fiercely proud,{" "}
                   <span className="cancel-text">somewhat delusional</span>{" "}
                   <span className="chelsea" data-cursor="block">
                     Chelsea FC
                   </span>{" "}
-                  <img
-                    className="description-gif chelsea-gif"
-                    src="https://media.tenor.com/x80svCL2zVIAAAAM/chelsea-champions-league.gif"
-                    alt="chelsea champions league winning celebration"
-                    width='30px'
-                    height='30px'
-                  />{" "}
+                  <span className="tooltip-about" data-cursor="text">
+                    <img
+                      className="description-gif chelsea-gif"
+                      src="https://media.tenor.com/x80svCL2zVIAAAAM/chelsea-champions-league.gif"
+                      alt="chelsea champions league winning celebration"
+                      width='30px'
+                      height='30px'
+                    />
+                    <span className="tooltip-about-content">
+                      <img
+                        className="description-gif chelsea-gif"
+                        src="https://media.tenor.com/x80svCL2zVIAAAAM/chelsea-champions-league.gif"
+                        alt="chelsea champions league winning celebration"
+                      />
+                    </span>
+                  </span>{" "}
                   supporter — we definitely exist!! It's true, sarcasm 💙
                   me...
                 </p>

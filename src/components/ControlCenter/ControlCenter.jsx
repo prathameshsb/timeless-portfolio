@@ -210,6 +210,7 @@ function ControlCenter() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <circle
+                  className='circle-top'
                   cx="6.5"
                   cy="6.5"
                   r="2.75"
@@ -237,6 +238,7 @@ function ControlCenter() {
                   strokeWidth="1.5"
                 />
                 <circle
+                  className='circle-bottom'
                   cx="23.5"
                   cy="21.5"
                   r="3.75"

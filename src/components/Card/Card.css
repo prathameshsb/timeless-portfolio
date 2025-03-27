@@ -1,11 +1,15 @@
 .project-card-content {
-  width: 98%;
-  height: 98%;
+  width: 100%;
+  height: 100%;
   border-radius: inherit;
+  display: flex;
+  gap: 30px;
 }
 
 .project-card-image-holder {
   width: 100%;
+  max-width: 480px;
+  max-height: 515px;
   height: 100%;
   border-radius: inherit;
   display: flex;
@@ -14,13 +18,10 @@
 }
 
 .project-image {
-  width: 98%;
+  width: 99%;
   height: 98%;
-  border-radius: 15px;
+  border-radius: inherit;
   object-fit: cover;
-  box-shadow: -2px -2px 2px rgba(41, 41, 41, 0.25),
-    2px 2px 2px rgba(16, 16, 16, 1), -2.5px -2.5px 5px rgba(41, 41, 41, 1),
-    2.5px 2.5px 5px rgba(16, 16, 16, 1);
 }
 
 .overlay-effect {
@@ -30,7 +31,6 @@
   left: 0;
   height: 98%;
   border-radius: inherit;
-  background-color: rgba(7, 7, 7, 0.3);
   z-index: 4;
 }
 
@@ -84,19 +84,22 @@
 .project-detail-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   color: #fff;
   padding: 20px;
   font-family: "Inconsolata";
+  gap: 10px;
 }
 
 .project-card-image-holder.expanded {
   width: 60%;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .project-button-container {
   display: flex;
   gap: 20px;
+  justify-content: flex-end;
 }
 
 .project-close-btn {
@@ -112,14 +115,12 @@
 }
 
 .project-go-btn {
-  width: 32px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background-color: #43a047;
-  width: auto;
-  padding: 0 20px 0 20px;
-  border-radius: 5px;
-  border: none;
-  color: #2c2c2c;
+  border-radius: 50%;
+  border: 2px solid;
+  color: #43a047;
   font-weight: 900;
   font-size: 14px;
   z-index: 10;
@@ -128,13 +129,26 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  gap: 10px;
+  transition: transform 0.3s ease;
 }
 
 .project-close-btn:hover,
 .project-go-btn:hover,
 .project-github-btn:hover {
-  outline: 8px solid rgba(128, 128, 128, 0.388);
+  transform: scale(1.1)
+}
+
+.project-go-btn svg {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  fill: #2c2c2c;
+  opacity: 0;
+}
+
+.project-go-btn:hover svg {
+  transform: scale(1.4);
+  opacity: 1;
 }
 
 .project-github-btn {
@@ -164,8 +178,10 @@
 }
 
 .project-card-title {
-  font-size: 38px;
-  font-weight: 700;
+  font-size: 60px;
+  font-weight: 1000;
+  font-family: "Raleway", "Inconsolata";
+  margin: 0 auto 15px 0;
 }
 
 .project-card-tags {
@@ -174,22 +190,41 @@
   gap: 15px;
 }
 
-.project-card-tags > .tag {
-  width: "auto";
-  height: "auto";
-  padding: 10px;
-  border-radius: 3px;
-  background-color: #ededed;
-  color: #191919;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
+.project-card-description {
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  max-height: 140px;
+  height: 120px;
+  margin-bottom: 15px;
+  font-size: 17px;
 }
 
 .tag {
-  padding: 3px 8px;
-  border-radius: 50px;
-  background-color: #c3c3c3;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: none;
+  color: #959595;
+  border: 2px solid #959595;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 0 0 25px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.project-card-tags {
+  width: fit-content;
+  max-width: 300px;
+}
+
+.project-card-tags > .tags {
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #ededed;
   color: #191919;
   font-size: 14px;
   font-weight: 600;

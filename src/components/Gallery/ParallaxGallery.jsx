@@ -6,14 +6,6 @@ const images = [
   "2.jpg",
   "3.jpg",
   "4.jpg",
-  "5.jpg",
-  "6.jpg",
-  "7.jpg",
-  "8.jpg",
-  "9.jpg",
-  "10.jpg",
-  "11.jpg",
-  "12.jpg",
 ];
 
 export default function ParallaxGallery() {
@@ -24,8 +16,7 @@ export default function ParallaxGallery() {
     const updatePosition = () => {
       if (gallery.current) {
         const galleryRect = gallery.current.getBoundingClientRect();
-        const inView =
-          galleryRect.top < window.innerHeight && galleryRect.bottom >= 0;
+        const inView = galleryRect.top < window.innerHeight && galleryRect.bottom >= 0;
 
         if (inView) {
           const position = window.pageYOffset - gallery.current.offsetTop;
@@ -34,10 +25,14 @@ export default function ParallaxGallery() {
       }
     };
 
-    window.addEventListener("scroll", updatePosition);
+    const handleScroll = () => {
+      requestAnimationFrame(updatePosition); // Ensures smooth updates
+    };
+
+    window.addEventListener("scroll", handleScroll);
     updatePosition(); // Initial update
 
-    return () => window.removeEventListener("scroll", updatePosition);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (

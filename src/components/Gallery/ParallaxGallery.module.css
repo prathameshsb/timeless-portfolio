@@ -1,6 +1,6 @@
 .gallery {
   height: 175vh;
-  background: #191919;
+  background: #090909;
   position: relative;
   display: flex;
   gap: 2vw;
@@ -18,6 +18,8 @@
   display: flex;
   flex-direction: column;
   gap: 2vw;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
 }
 
 .imageContainer {
@@ -28,32 +30,12 @@
   overflow: hidden;
   background-color: #191919;
   border-radius: 20px;
-  box-shadow: -10px -10px 20px rgba(41, 41, 41, 1),
-    10px 10px 20px rgba(16, 16, 16, 1),
-    inset -10px -10px 8px rgba(41, 41, 41, 0.25),
-    inset 8px 8px 8px rgba(16, 16, 16, 1);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0), -3px -3px 2px rgb(40, 40, 40);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.parallax-gallery-images {
-  object-fit: cover;
-  width: inherit;
-  height: inherit;
-}
-&:nth-of-type(1) {
-  top: -45%;
-}
-&:nth-of-type(2) {
-  top: -95%;
-}
-&:nth-of-type(3) {
-  top: -45%;
-}
-&:nth-of-type(4) {
-  top: -75%;
-}
 .spacer {
   height: 100vh;
 }
